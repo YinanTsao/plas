@@ -1,0 +1,1 @@
+{"nodes":["yinan1","yinan3","yinan7"],"users":["130.104.229.93","130.104.229.95","130.104.229.98"],"capacities":{"yinan1":3,"yinan3":3,"yinan7":7},"latency_node_user":{"('yinan7', '130.104.229.93')":10.959361000000001,"('yinan7', '130.104.229.95')":20.694253,"('yinan7', '130.104.229.98')":30.801599},"rps":0,"service_rate":0,"slo":0,"deployment_name":"","opti_pref":0}

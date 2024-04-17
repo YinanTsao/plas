@@ -1,0 +1,10 @@
+Note for pinger agents
+
+1, Host the list of nodes name along with their IPs in map[string]string and user IPs in []string,
+    on the master node in plas_static, opening a port hosting such a list
+2, For each container on worker node, query the masternode:port for the list and measure all the latencies and put them
+    into the unified struct (don't use the node name to get the IP since there's no clientset on worker nodes)
+3, When the measurement is done, send the struct back to the master node on another port that is opened
+    by plas_static to get the structs and put them together. 
+4, When set it up as a deployment in K8s, make sure setting it as a daemonset and the node affinity to the
+    master node since we are not considering using master node as a worker.

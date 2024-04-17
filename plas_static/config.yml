@@ -1,0 +1,25 @@
+users:
+  - "130.104.229.93" # user1
+  - "130.104.229.95" # user2
+  - "130.104.229.98" # user3
+# interval for launching measurement between nodes
+
+#target deployment
+deployments:
+  - deploymentName: "tngo"
+    namespace: "openfaas-fn"
+    # serviceJaeger: "frontend"
+    # operationJaeger: "/dispatch"
+    serviceTime: 0.55 #rps
+    rpsPerUser: 1 #rps
+    SLO: 600 # ms
+    SLOVioToleration: 0.65 # The percentage of users that violate SLO will be tolerated, instead of triggering 
+    optiPref: 2 # 1 for the min sites used, 2 for min instances, 3 for min sum RTT for each user
+
+  # - deploymentName: "search"
+  #   namespace: "hotelres"
+  #   servicejaeger: ""
+  #   operationjaeger: ""
+  #   SLO: 800
+# replicas: 2 # Calculated and defined by the func ReplicasCalculator
+#Service Jaeger

@@ -1,0 +1,1 @@
+{"nodes":["yinan1","yinan3","yinan7"],"users":["130.104.229.93","130.104.229.95","130.104.229.98"],"capacities":{"yinan1":3,"yinan3":3,"yinan7":7},"latency_node_user":{},"rps":1,"service_rate":1.8181818181818181,"slo":600,"deployment_name":"tngo","opti_pref":2}
