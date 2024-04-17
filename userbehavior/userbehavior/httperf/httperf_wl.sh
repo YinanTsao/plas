@@ -18,4 +18,4 @@
 
 # --timeout 5
 
-httperf --hog --print-reply --print-request --server 130.104.229.12 --port 31112 --uri /function/tngo --add-header='Content-Type:application/json\n' --wsesslog 200,100,session.txt --period e0.5
+httperf --hog --print-reply --print-request --server 130.104.229.12 --port 31112 --uri /function/tngo --add-header='Content-Type:application/json\n' --wsesslog 200,100,session.txt --period e0.1
