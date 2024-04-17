@@ -10,4 +10,5 @@ mkdir build && \
 cd build && \
 ../configure && \
 make && \
-make install
+make install && \
+httperf -v | grep open
